@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel=icon href=/favicon.ico>
+    <title>Find your next movie with Reels</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/70089563da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/SCLogo.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+    <header>
+      <h1>Welcome to <strong>Reels</strong>!</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="search">
+          <input
+            type="text"
+            id="input"
+            placeholder="Find your next movie"
+            onkeydown="(search(this))"
+          />
+          <button
+            class="btn fa fa-search fa-w-16"
+            onclick="findMovies()"
+          ></button>
+        </div>
+        <div class="movie-list">
+            <div class="movie">
+                  <h3 class="mov__title skeleton">Loading</h3>
+                  <p class="mov__year skeleton">...</p>
+                  <p class="mov__id skeleton">...</p>
+                  <figure class="img__wrapper skeleton">
+                      <img src="https://pngimg.com/d/trollface_PNG4.png" alt="" class="mov__img skeleton preload">
+                  </figure>
+              </div>
+            <div class="movie">
+                  <h3 class="mov__title skeleton">Loading</h3>
+                  <p class="mov__year skeleton">...</p>
+                  <p class="mov__id skeleton">...</p>
+                  <figure class="img__wrapper skeleton">
+                      <img src="https://pngimg.com/d/trollface_PNG4.png" alt="" class="mov__img skeleton preload">
+                  </figure>
+              </div>
+            <div class="movie">
+                  <h3 class="mov__title skeleton">Loading</h3>
+                  <p class="mov__year skeleton">...</p>
+                  <p class="mov__id skeleton">...</p>
+                  <figure class="img__wrapper skeleton">
+                      <img src="https://pngimg.com/d/trollface_PNG4.png" alt="" class="mov__img skeleton preload">
+                  </figure>
+              </div>
+            <div class="movie">
+                  <h3 class="mov__title skeleton">Loading</h3>
+                  <p class="mov__year skeleton">...</p>
+                  <p class="mov__id skeleton">...</p>
+                  <figure class="img__wrapper skeleton">
+                      <img src="https://pngimg.com/d/trollface_PNG4.png" alt="" class="mov__img skeleton preload">
+                  </figure>
+              </div>
+            <div class="movie">
+                  <h3 class="mov__title skeleton">Loading</h3>
+                  <p class="mov__year skeleton">...</p>
+                  <p class="mov__id skeleton">...</p>
+                  <figure class="img__wrapper skeleton">
+                      <img src="https://pngimg.com/d/trollface_PNG4.png" alt="" class="mov__img skeleton preload">
+                  </figure>
+              </div>
+            <div class="movie">
+                  <h3 class="mov__title skeleton">Loading</h3>
+                  <p class="mov__year skeleton">...</p>
+                  <p class="mov__id skeleton">...</p>
+                  <figure class="img__wrapper skeleton">
+                      <img src="https://pngimg.com/d/trollface_PNG4.png" alt="" class="mov__img skeleton preload">
+                  </figure>
+              </div>
+              
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
