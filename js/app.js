@@ -22,8 +22,6 @@ async function movSearch(searchTerm) {
 };
 
 function findMovies() {
-  const spinner = document.querySelector(".loading");
-  spinner.classList += ' .movies__loading'
   let searchTerm = movieSearchBox.value;
   if (searchTerm.length > 0) {
     const div = document.querySelector(".movie-list");
@@ -31,7 +29,6 @@ function findMovies() {
       div.removeChild(div.firstChild);
     }
     movSearch(searchTerm);
-    spinner.classList.remove('.movies__loading');
   }
   //console.log(searchTerm);
 }
@@ -40,7 +37,7 @@ function movHTML(movies) {
   for (let idx = 0; idx < 6; ++idx) {
     let movieListItem = document.createElement("div");
     movieListItem.classList.add("movie");
-    movieListItem.innerHTML = `<div class="movie">
+    movieListItem.innerHTML = `<div>
                   <h3 class="mov__title">${movies[idx].Title}</h3>
                   <p class="mov__year"><b>Year:</b> ${movies[idx].Year}</p>
                   <p class="mov__id"><b>IMDB ID:</b> ${movies[idx].imdbID}</p>

@@ -179,7 +179,6 @@ nav{
 .img__wrapper{
     width: 100%;
     max-width: 400px;
-    height: calc(100vw / 3);
 }
 .mov__img{
     width: 100%;
@@ -195,31 +194,4 @@ nav{
 .mov__year,
 .mov__id{
     z-index: 100;
-}
-
-
-.dark-theme .title,
-.dark-theme .section__title,
-.dark-theme .section__sub-title,
-.dark-theme .nav__link--anchor,
-.dark-theme .fa-circle-half-stroke,
-.dark-theme .header__para {
-    color: #fff;
-}
-.dark-theme section{
-    background-color: #242424;
-}
-.dark-theme .scroll__icon{
-    border-color: white;
-}
-.dark-theme .scroll__icon:after,
-.dark-theme .link__hover-effect--black:after{
-    background-color: white;
-}
-.dark-theme .mail__btn{
-    background-color: white;
-    color: #242424;
-}
-.dark-theme .blue{
-    text-shadow: 0 0 2px #9ea3ce;
 }
